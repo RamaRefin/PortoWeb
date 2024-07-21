@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.container {
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ background-color: #f3f5f8;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111;
+}
+
+
+.logo {
+  display: flex;
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+.navItems {
+  display: flex;
+}
+
+.navItems li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navItems li a {
+  font-size: 15px;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.links a {
+  font-size: 20px;
+  color: black;
+  margin: 20px 10px;
+}
+/* ----------------------------------- desk----------------- */
+.desk {
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.desk h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.desk p{
+    color: black;
+    line-height: 22px;
+    font-family: "Bruno Ace SC", sans-serif;
+}
+
+.desk a {
+    background: black;
+    padding: 10px 18px ;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+
+
+/* ----------------------- banner image --------------------- */
+
+.image {
+    width: 5%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+}
+
+.image img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.image-me {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transform: rotateY(180deg);
+}
+
+
+.image:hover .shape {
+    bottom: 40px;
+}
+
+.image:hover .me {
+    left: 45px;
+}
+
+
+/* -------------------------konten 2 ------------------------- */
+
+.content {
+    margin-top: 25vh;
+    width: 100%;
+    min-height: 80vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+}
+
+.contact-form input[type="submit"] {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+}
+
+
+/*  -------------------- Responsive web--------------------- */
+/* --------------------- ipad ------------------------- */
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      line-height: normal;
+    }
+  
+    .logo {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  
+    .navItems {
+      flex-direction: column;
+    }
+  
+    .navItems li {
+      margin: 10px 0;
+    }
+  
+    .links a {
+      font-size: 18px;
+    }
+  
+    .desk {
+      margin-left: 5%;
+      margin-top: 20%;
+    }
+  
+    .desk h1 {
+      font-size: 40px;
+    }
+  
+    .desk p {
+      font-size: 16px;
+    }
+
+
+    /* ---------image---------------- */
+  
+    .image {
+      width: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-me {
+       width: 100%;
+       height: auto;
+       left: 1%;
+    }
+  
+    .content {
+      padding: 30px;
+    }
+  }
+
+  @media (max-width: 880px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      line-height: normal;
+    }
+  
+    .logo {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  
+    .navItems {
+      flex-direction: column;
+    }
+  
+    .navItems li {
+      margin: 10px 0;
+    }
+  
+    .links a {
+      font-size: 18px;
+    }
+  
+    .desk {
+      margin-left: 5%;
+      margin-top: 20%;
+    }
+  
+    .desk h1 {
+      font-size: 40px;
+    }
+  
+    .desk p {
+      font-size: 16px;
+    }
+
+
+    /* ---------image---------------- */
+  
+    .image {
+      width: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-me {
+       width: 100%;
+       height: auto;
+       left: 1%;
+    }
+  
+    .content {
+      padding: 30px;
+    }
+  }
+
+
+  @media (max-width: 1080px) {
+
+    /* ---------image---------------- */
+  
+    .image {
+        width: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    
+      .image img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .image-me {
+         width: 100%;
+         height: auto;
+         left: 1%;
+      }
+    
+      .content {
+        padding: 30px;
+      }
+    }
+
+
+    @media (max-width: 540px) {
+
+        /* ---------image---------------- */
+      
+        .image {
+            width: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        
+          .image img {
+            width: 100%;
+            height: auto;
+          }
+      
+          .image-me {
+             width: 100%;
+             height: auto;
+             left: 1%;
+          }
+        
+          .content {
+            padding: 30px;
+          }
+        }
+
+  
+  /* -------------------------- Mobile phones---------------------------- */
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      line-height: normal;
+    }
+  
+    .logo {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  
+    .navItems {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navItems li {
+      margin: 10px 0;
+    }
+  
+    .links a {
+      font-size: 16px;
+    }
+  
+    .desk {
+      margin-left: 5%;
+      margin-top: 30%;
+      text-align: center;
+    }
+  
+    .desk h1 {
+      font-size: 30px;
+    }
+  
+    .desk p {
+      font-size: 14px;
+    }
+  
+    .desk a {
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+  
+    .image {
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-me {
+        width: 100%;
+        height: auto;
+        left: 1%;
+     }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 380px) {
+
+    /* -----------------image--------------------- */
+
+    .image {
+      width: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-me {
+        width: 100%;
+        height: auto;
+        left: 1%;
+     }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+    }
+  }
+
+
+  @media (max-width: 370px) {
+
+    /* -----------------image--------------------- */
+
+    .image {
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-me {
+        width: 100%;
+        height: auto;
+        left: 1%;
+     }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 350px) {
+
+    /* -----------------image--------------------- */
+
+    .image {
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-me {
+        width: 100%;
+        height: auto;
+        left: 1%;
+     }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+    }
+  }
