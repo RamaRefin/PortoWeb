@@ -75,6 +75,10 @@ nav {
     font-family: sans-serif;
 }
 
+.desk h1 span {
+  color: rgb(6, 49, 129);
+}
+
 .desk p{
     color: black;
     line-height: 22px;

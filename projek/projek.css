@@ -78,15 +78,16 @@ nav {
   border: none;
   overflow: hidden;
 }
-.card-body {
+.card-body1 {
   flex: 1;
   padding: 2rem;
   background-color: white;
 }
-.card-body h4 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.card-body1 h4 {
+  font-size: 30px;
+  font-weight: 700;
   margin-bottom: 1rem;
+  font-family: "Caveat", cursive;
 }
 .card-body p {
   margin-bottom: 1rem;
@@ -116,15 +117,17 @@ nav {
   border: none;;
   overflow: hidden;
 }
-.card-body {
+.card-body2 {
   flex: 1;
   padding: 2rem;
   background-color: white;
 }
-.card-body h4 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.card-body2 h4 {
+  font-size: 30px;
+  font-weight: 700;
   margin-bottom: 1rem;
+  font-family: "Caveat", cursive;
+
 }
 .card-body p {
   margin-bottom: 1rem;
@@ -155,15 +158,16 @@ nav {
     border: none;
     overflow: hidden;
   }
-  .card-body {
+  .card-body3 {
     flex: 1;
     padding: 2rem;
     background-color: white;
   }
-  .card-body h4 {
-    font-size: 1.5rem;
+  .card-body3 h4 {
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 1rem;
+    font-family: "Caveat", cursive;
   }
   .card-body p {
     margin-bottom: 0;
@@ -211,7 +215,15 @@ button:hover {
     height: auto;
   }
 
-  .card-body {
+  .card-body1 {
+    padding: 1rem;
+  }
+
+  .card-body2 {
+    padding: 1rem;
+  }
+
+  .card-body3 {
     padding: 1rem;
   }
 
@@ -244,11 +256,27 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  .card-body h4 {
+  .card-body1 h4 {
     font-size: 1.25rem;
   }
 
-  .card-body p {
+  .card-body2 h4 {
+    font-size: 1.25rem;
+  }
+
+  .card-body3 h4 {
+    font-size: 1.25rem;
+  }
+
+  .card-body1 p {
+    font-size: 0.875rem;
+  }
+
+  card-body2 p {
+    font-size: 0.875rem;
+  }
+
+  card-body3 p {
     font-size: 0.875rem;
   }
 
