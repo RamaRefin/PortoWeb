@@ -7,9 +7,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Chicle&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap" 
+    rel="stylesheet">
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link
     rel="stylesheet"
@@ -37,12 +41,12 @@
 
 <!-- -----------------------Desk-------------------------- -->
         
-        <div class="desk">
-            <h1>RAMA D <span>REFIN</span></h1>
-            <p>Coder, Editor, Cinematography</p>
+        <div class="desk" data-aos="fade-left" data-aos-duration="1500">
+            <h1>FULL STACK <span>DEVELOPER</span></h1>
+            <p>I love kebab, I love Game and I love u</p>
             <a href="#">Download CV</a>
         </div>
-        <div class="image">
+        <div class="image" data-aos="fade-left" data-aos-duration="1000">
             <img src="/img/bl1.png" class="shape">
             <div class="image-me">
                 <img src="/img/img1.png" class="me">
@@ -55,19 +59,44 @@
 <!-- ----------------------konten----------------------------- -->
 
 
-        <div class="content">
-            <h2>Front End Web</h2>
-            <ul>
-                <li>Proficiency in using Code Editor :</li>
-                <li>VSCODE</li>
-            </ul>
-            <h2>Experience</h2>
-            <ul>
-                <li>Experience in:</li>
-                <li>HTML & CSS, Sketch, Figma, Adobe Illustrator, Adobe XD.</li>
-            </ul>
-        </div>
-        <div class="contact-section">
+<div class="content" data-aos="fade-right" data-aos-duration="1500">
+    <div class="cn-img">
+        <img src="img/IMG_4269.JPG" alt="me1">
+    </div>
+    <div class="text-content">
+        <h1>About Me</h1>
+        <p>Let introduce myself and my interest</p>
+        <a href="About/About.html" class="learn-more">Learn More</a>
+    </div>
+</div>
+
+
+<!-- ----------------------konten----------------------------- -->
+
+
+<div class="project" data-aos="fade-left" data-aos-duration="1500">
+    <div class="text-project">
+        <h2>My Porject</h2>
+        <p>This is my project that i have worked on </p>
+        <a href="About/About.html" class="learn-more">See More</a>
+    </div>
+    <div class="cn-project">
+        <img src="img/pc.jpg" alt="pc">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ----------------------kontak form----------------------------- -->
+
+        <div class="contact-section" data-aos="fade-right" data-aos-duration="1500">
             <h2>CONTACT ME FOR COLLABORATION</h2>
             <form class="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
@@ -77,5 +106,13 @@
             </form>
         </div>
     </div>
+
+
+
+  
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>

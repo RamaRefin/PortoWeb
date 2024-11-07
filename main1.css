@@ -16,7 +16,7 @@ body {
  position: relative;
  width: 100%;
  height: 100vh;
- background-color: #f3f5f8;
+ background-color: #f3f3f3;
 }
 
 nav {
@@ -72,17 +72,20 @@ nav {
     font-size: 50px;
     color: black;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-family: "Chakra Petch", sans-serif;
+    max-width: 50%;
 }
 
 .desk h1 span {
   color: rgb(6, 49, 129);
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .desk p{
     color: black;
     line-height: 22px;
-    font-family: "Bruno Ace SC", sans-serif;
+    font-family: "Caveat", serif;
+    font-size: 25px;
 }
 
 .desk a {
@@ -126,44 +129,139 @@ nav {
     transform: rotateY(180deg);
 }
 
-
-.image:hover .shape {
-    bottom: 40px;
-}
-
-.image:hover .me {
-    left: 45px;
+.image-me img:hover {
+  filter: grayscale(0%);
 }
 
 
-/* -------------------------konten 2 ------------------------- */
+
+/* -------------------------About me ------------------------- */
 
 .content {
-    margin-top: 25vh;
-    width: 100%;
-    min-height: 80vh;
-    padding: 50px;
-    text-align: center;
+  background-color: #f3f3f3;
+  align-items: flex-start;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+  padding-top: 30%;
+  padding-bottom: 30%;
 }
 
-.content h2 {
-    margin-bottom: 20px;
+.text-content {
+  max-width: 50%;
+  margin-right: 10%;
 }
 
-.content ul {
-    list-style-type: none;
-    padding: 0;
+.text-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-.content ul li {
-    margin-bottom: 10px;
+.text-content p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
 }
+
+.learn-more {
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.cn-img {
+  max-width: 40%;
+  margin-right: 30px;
+}
+
+.cn-img img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 5%;
+  transition: filter 0.5s ease; 
+  filter: grayscale(100%);
+}
+
+.cn-img img:hover {
+  filter: grayscale(0%);
+}
+
+/* -------------------------project ------------------------- */
+
+.project {
+  background-color: #f3f3f3;
+  align-items: flex-start;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.text-project {
+  max-width: 50%;
+  margin-left: 5%;
+}
+
+.text-project h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.text-project p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.cn-project {
+  max-width: 40%;
+  margin-right: 30px;
+}
+
+.cn-project img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 5%;
+  transition: filter 0.5s ease; 
+  filter: grayscale(100%);
+}
+
+.cn-project img:hover {
+  filter: grayscale(0%);
+}
+
+
+
+
+
+/* -------------------------Contact form ------------------------- */
 
 .contact-section {
-    background-color: black;
-    color: white;
+    background-color: #f3f3f3;
+    color: black;
     padding: 50px 0;
     text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 .contact-section h2 {
@@ -183,6 +281,7 @@ nav {
     padding: 10px;
     margin: 10px 0;
     border: none;
+    border-style: solid;
 }
 
 .contact-form input[type="submit"] {
@@ -191,6 +290,8 @@ nav {
     cursor: pointer;
     width: 100px;
 }
+
+
 
 
 /*  -------------------- Responsive web--------------------- */
