@@ -1,12 +1,19 @@
+@font-face {
+  font-family: "ChakraPetch-Bold";
+  src: url(/font/ChakraPetch-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: "poppins", sans-serif;
 }
 
 body {
     overflow-x: hidden;
+    font-family: "ChakraPetch-Bold";
 }
 
 .container {
@@ -26,6 +33,7 @@ nav {
 
 
 .logo {
+  font-family: "poppins", sans-serif;
   display: flex;
   font-size: 20px;
   font-weight: 800;
@@ -38,241 +46,27 @@ nav {
 }
 
 
-/* --------------------------card wrap-----------------------------------  */
+/* --------------------------content-----------------------------------  */
 
-.card-wrapper1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 85vh;
+.content {
+  display: grid;
+  place-content: center;
+  height: 80vh;
 }
-.card {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  max-width: 1200px;
-  height: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: none;
-  overflow: hidden;
+
+.text-content h1 {
+  font-size: 5vw;
+  font-weight: bold;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  line-height: 5.9rem;
 }
-.card-body1 {
-  flex: 1;
-  padding: 2rem;
-  background-color: white;
-}
-.card-body1 h4 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-family: "Caveat", cursive;
-}
-.card-body p {
-  margin-bottom: 1rem;
-  color: #6c757d;
-}
-.card-img {
-  width: 60%;
-  object-fit: cover;
+
+.char {
+  transform: translateY(-115px);
+  transition: transfrom .5s;
 }
 
 
-/* card wrap 2 */
-
-.card-wrapper2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 45vh;
-}
-.card {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  max-width: 1200px;
-  height: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: none;;
-  overflow: hidden;
-}
-.card-body2 {
-  flex: 1;
-  padding: 2rem;
-  background-color: white;
-}
-.card-body2 h4 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-family: "Caveat", cursive;
-
-}
-.card-body p {
-  margin-bottom: 1rem;
-  color: #6c757d;
-}
-.card-img {
-  width: 60%;
-  object-fit: cover;
-}
 
 
-  /*   card wrap 3  */
-
-
-  .card-wrapper3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-  }
-  .card {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    max-width: 1200px;
-    height: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: none;
-    overflow: hidden;
-  }
-  .card-body3 {
-    flex: 1;
-    padding: 2rem;
-    background-color: white;
-  }
-  .card-body3 h4 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    font-family: "Caveat", cursive;
-  }
-  .card-body p {
-    margin-bottom: 0;
-    color: #6c757d;
-  }
-  .card-img {
-    width: 60%;
-    object-fit: cover;
-  }
-
-
-  /* Button */
-
-
-  button {
-  background-color: black;
-  color: white;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 13px;
-  margin: 4px 2px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover {
-  background-color: white;
-  color: black;
-}
-
-/* -------------------Responsive web------------------ */
-
-
-@media (max-width: 768px) {
-  .card {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .card-img {
-    width: 100%;
-    height: auto;
-  }
-
-  .card-body1 {
-    padding: 1rem;
-  }
-
-  .card-body2 {
-    padding: 1rem;
-  }
-
-  .card-body3 {
-    padding: 1rem;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    line-height: normal;
-  }
-
-  .navItems {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navItems li {
-    margin: 10px 0;
-  }
-
-  .container {
-    padding: 20px;
-  }
-
-  .card-wrapper1,
-  .card-wrapper2,
-  .card-wrapper3 {
-    height: auto;
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .card-body1 h4 {
-    font-size: 1.25rem;
-  }
-
-  .card-body2 h4 {
-    font-size: 1.25rem;
-  }
-
-  .card-body3 h4 {
-    font-size: 1.25rem;
-  }
-
-  .card-body1 p {
-    font-size: 0.875rem;
-  }
-
-  card-body2 p {
-    font-size: 0.875rem;
-  }
-
-  card-body3 p {
-    font-size: 0.875rem;
-  }
-
-  .logo {
-    font-size: 18px;
-  }
-
-  .navItems li a {
-    font-size: 14px;
-  }
-
-  .links a {
-    font-size: 18px;
-  }
-
-  button {
-    font-size: 12px;
-    padding: 5px 10px;
-  }
-}
 
