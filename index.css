@@ -917,9 +917,11 @@ a {
   }
 
   .cn-img img{
+    height: 50%;
     margin-top: 100px;
     margin: 50px auto;
   }
+  
 
 
   .text-content,
