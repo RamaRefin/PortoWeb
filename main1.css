@@ -131,6 +131,7 @@ nav {
 }
 
 .text-content {
+  font-family: "Chakra Petch", sans-serif;
   max-width: 50%;
   margin-left: 10%;
 }
@@ -219,16 +220,17 @@ a {
 .project {
   background-color: #f3f3f3;
   align-items: flex-start;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px 50px;
-  padding-top: 30%;
-  padding-bottom: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .text-project {
+  font-family: "Chakra Petch", sans-serif;
   max-width: 50%;
   margin-left: 5%;
 }
@@ -284,6 +286,7 @@ a {
     text-align: center;
     padding-top: 20%;
     padding-bottom: 20%;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .contact-section h2 {
@@ -319,350 +322,696 @@ a {
 /*  -------------------- Responsive web--------------------- */
 /* --------------------- ipad ------------------------- */
 
+/* Responsive for tablet and mobile */
+@media (max-width: 1024px) {
+  .desk {
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+
+  .desk h1 {
+    font-size: 100px;
+    max-width: 100%;
+  }
+
+  .desk p {
+    font-size: 40px;
+  }
+
+  .desk a {
+    padding: 15px 30px;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  .image {
+    height: 850px;
+    width: 40%;
+    left: 30%;
+  }
+
+  .content,
+  .project {
+    flex-direction: column;
+    padding: 20% 5%;
+    gap: 30px;
+  }
+
+  .cn-img,
+  .cn-project {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .text-content,
+  .text-content {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-size: 30px;
+  }
+
+  .text-content a {
+    font-size: 35px;
+  }
+
+
+  .text-project,
+  .text-project {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-project p {
+    font-size: 30px ;
+  }
+
+  .text-project a {
+    font-size: 35px;
+  }
+
+  .cn-project,
+  .cn-img{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  /* contact */
+
+  .contact-section {
+    padding: 40px 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 70%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input {
+    height: 50px;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 20%;
+  }
+  
+}
+
+
+@media (max-width: 820px) {
+  
+  body {
+    overflow-x: hidden ;
+  }
+  
+  .desk {
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+
+  .desk h1 {
+    font-size: 100px;
+    max-width: 100%;
+  }
+
+  .desk p {
+    font-size: 40px;
+  }
+
+  .desk a {
+    padding: 15px 30px;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+
+  .image-me img,
+  .image img {
+  height: 650px;
+  }
+  
+
+
+  /* About */
+
+  .content,
+  .cn-img {
+    padding-top: 200px;
+  }
+
+  .cn-img img,
+  .text-content{
+    margin-top: 300px;
+    margin: 50px auto;
+  }
+  
+
+  .text-content,
+  .text-content {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-size: 30px;
+  }
+
+  .text-content a {
+    font-size: 35px;
+  }
+
+
+  /* project */
+
+  .project,
+  .cn-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 5% 20%; /* Sesuaikan padding biar gak terlalu jauh */
+  }
+
+
+  .cn-project img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  .text-project,
+  .text-project {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-project p {
+    font-size: 30px ;
+  }
+
+  .text-project a {
+    font-size: 35px;
+  }
+
+  .cn-project img{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 0;
+  }
+
+  /* contact */
+
+  .contact-section {
+    padding: 100px 30px 300px;
+  }
+
+  .contact-section h2 {
+    padding: 10%;
+    font-size: 200%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input {
+    height: 50px;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 20%;
+  }
+  
+}
+
+
+/* 768 */
+
+
 @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      line-height: normal;
-    }
   
-    .logo {
-      font-size: 18px;
-      margin: 10px 0;
-    }
+  body {
+    overflow-x: hidden ;
+  }
   
-    .navItems {
-      flex-direction: column;
-    }
-  
-    .navItems li {
-      margin: 10px 0;
-    }
-  
-    .links a {
-      font-size: 18px;
-    }
-  
-    .desk {
-      margin-left: 5%;
-      margin-top: 20%;
-    }
-  
-    .desk h1 {
-      font-size: 40px;
-    }
-  
-    .desk p {
-      font-size: 16px;
-    }
-
-
-    /* ---------image---------------- */
-  
-    .image {
-      width: 65%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .image-me {
-       width: 100%;
-       height: auto;
-       left: 1%;
-    }
-  
-    .content {
-      padding: 30px;
-    }
+  .desk {
+    margin-left: 5%;
+    margin-top: 20%;
   }
 
-  @media (max-width: 880px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      line-height: normal;
-    }
-  
-    .logo {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-  
-    .navItems {
-      flex-direction: column;
-    }
-  
-    .navItems li {
-      margin: 10px 0;
-    }
-  
-    .links a {
-      font-size: 18px;
-    }
-  
-    .desk {
-      margin-left: 5%;
-      margin-top: 20%;
-    }
-  
-    .desk h1 {
-      font-size: 40px;
-    }
-  
-    .desk p {
-      font-size: 16px;
-    }
+  .desk h1 {
+    font-size: 85px;
+    max-width: 100%;
+  }
 
+  .desk p {
+    font-size: 40px;
+  }
 
-    /* ---------image---------------- */
-  
-    .image {
-      width: 75%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .image-me {
-       width: 100%;
-       height: auto;
-       left: 1%;
-    }
-  
-    .content {
-      padding: 30px;
-    }
+  .desk a {
+    padding: 15px 30px;
+    font-size: 25px;
+    border-radius: 10px;
   }
 
 
-  @media (max-width: 1080px) {
-
-    /* ---------image---------------- */
+  .image-me img,
+  .image img {
+    height: 550px;
+  }
   
-    .image {
-        width: 75%;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    
-      .image img {
-        width: 100%;
-        height: auto;
-      }
-  
-      .image-me {
-         width: 100%;
-         height: auto;
-         left: 1%;
-      }
-    
-      .content {
-        padding: 30px;
-      }
-    }
 
 
-    @media (max-width: 540px) {
+  /* About */
 
-        /* ---------image---------------- */
-      
-        .image {
-            width: 60%;
-            left: 50%;
-            transform: translateX(-50%);
-          }
-        
-          .image img {
-            width: 100%;
-            height: auto;
-          }
-      
-          .image-me {
-             width: 100%;
-             height: auto;
-             left: 1%;
-          }
-        
-          .content {
-            padding: 30px;
-          }
-        }
-
-  
-  /* -------------------------- Mobile phones---------------------------- */
-  @media (max-width: 480px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      line-height: normal;
-    }
-  
-    .logo {
-      font-size: 16px;
-      margin: 10px 0;
-    }
-  
-    .navItems {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navItems li {
-      margin: 10px 0;
-    }
-  
-    .links a {
-      font-size: 16px;
-    }
-  
-    .desk {
-      margin-left: 5%;
-      margin-top: 30%;
-      text-align: center;
-    }
-  
-    .desk h1 {
-      font-size: 30px;
-    }
-  
-    .desk p {
-      font-size: 14px;
-    }
-  
-    .desk a {
-      padding: 8px 14px;
-      font-size: 14px;
-    }
-  
-    .image {
-      width: 90%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .image-me {
-        width: 100%;
-        height: auto;
-        left: 1%;
-     }
-  
-    .content {
-      padding: 20px;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      width: 90%;
-    }
+  .content,
+  .cn-img {
+    padding-top: 100px;
   }
 
-  @media (max-width: 380px) {
-
-    /* -----------------image--------------------- */
-
-    .image {
-      width: 65%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  .cn-img img,
+  .text-content{
+    margin-top: 300px;
+    margin: 50px auto;
+  }
   
-    .image img {
-      width: 100%;
-      height: auto;
-    }
 
-    .image-me {
-        width: 100%;
-        height: auto;
-        left: 1%;
-     }
-  
-    .content {
-      padding: 20px;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      width: 90%;
-    }
+  .text-content,
+  .text-content {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-size: 30px;
+  }
+
+  .text-content a {
+    font-size: 35px;
   }
 
 
-  @media (max-width: 370px) {
+  /* project */
 
-    /* -----------------image--------------------- */
-
-    .image {
-      width: 80%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .image-me {
-        width: 100%;
-        height: auto;
-        left: 1%;
-     }
-  
-    .content {
-      padding: 20px;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      width: 90%;
-    }
+  .project,
+  .cn-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 5% 20%; /* Sesuaikan padding biar gak terlalu jauh */
   }
 
-  @media (max-width: 350px) {
 
-    /* -----------------image--------------------- */
-
-    .image {
-      width: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .image-me {
-        width: 100%;
-        height: auto;
-        left: 1%;
-     }
-  
-    .content {
-      padding: 20px;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      width: 90%;
-    }
+  .cn-project img {
+    margin: 0 auto;
+    width: 100%;
   }
+
+
+  .text-project,
+  .text-project {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-project p {
+    font-size: 30px ;
+  }
+
+  .text-project a {
+    font-size: 35px;
+  }
+
+  .cn-project img{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 0;
+  }
+
+  /* contact */
+
+  .contact-section {
+    padding: 100px 30px 300px;
+  }
+
+  .contact-section h2 {
+    padding: 10%;
+    font-size: 200%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 70%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input {
+    height: 50px;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 20%;
+  }
+  
+}
+
+
+
+/* 700 */
+
+@media (max-width: 700px) {
+  /* Logo di navbar */
+  .logo {
+    left: 5%;
+    font-size: 18px;
+  }
+
+  /* Hero section (desk) */
+  .desk {
+    margin-left: 5%;
+    margin-top: 25%;
+  }
+
+  .desk h1 {
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .desk p {
+    font-size: 20px;
+  }
+
+  .desk a {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+
+  /* Gambar shape & character */
+  .image {
+    width: 30%;
+    left: 55%;
+  }
+
+  .image img.shape {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-me {
+    width: 100%;
+  }
+
+  .image-me img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* About me */
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  .text-content, .cn-img {
+    max-width: 90%;
+    margin: 0;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+
+  /* Project */
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  .text-project, .cn-project {
+    max-width: 90%;
+    margin: 0;
+  }
+
+  .text-project h2 {
+    font-size: 28px;
+  }
+
+  .text-project p {
+    font-size: 16px;
+  }
+
+  /* Contact Form */
+  .contact-section {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+
+
+/* 600px */
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    padding-top: 10px;
+  }
+
+  .logo {
+    position: static;
+    text-align: center;
+  }
+
+  .desk {
+    margin-top: 30%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .desk h1 {
+    font-size: 28px;
+  }
+
+  .desk p {
+    font-size: 18px;
+  }
+
+  .image {
+    display: none; /* biar ngga nutupin tampilan di layar kecil */
+  }
+
+  .content,
+  .project {
+    padding-top: 40%;
+    padding-bottom: 40%;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* -------430------------ */
+@media (max-width: 430px) {
+
+  [data-aos] {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  body {
+    overflow-x: hidden ;
+  }
+
+  .desk {
+    margin-top: 20%;
+  }
+
+  .desk h1 {
+    font-size: 40px;
+    max-width: 100%;
+  }
+
+  .desk p {
+    font-size: 25px;
+  }
+
+  .desk a {
+    padding: 15px 30px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  /* About */
+
+  .content,
+  .cn-img {
+    padding-top: 10px;
+  }
+
+  .cn-img img{
+    margin-top: 100px;
+    margin: 50px auto;
+  }
+
+
+  .text-content,
+  .text-content {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  .text-content a {
+    font-size: 18px;
+  }
+
+
+  /* project */
+
+  .project,
+  .cn-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .cn-project img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+
+  .text-project,
+  .text-project {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .text-project p {
+    font-size: 23px ;
+    padding: 0 20px;
+  }
+
+  .text-project a {
+    font-size: 20px;
+  }
+
+  .cn-project img{
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 0;
+  }
+
+  /* contact */
+
+  .contact-section {
+    padding: 100px 30px 300px;
+  }
+
+  .contact-section h2 {
+    padding: 10%;
+    font-size: 200%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 70%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .contact-form input {
+    height: 50px;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .contact-form input[type="submit"] {
+    width: 70%;
+  }
+}
+
+
+
+
+
+  

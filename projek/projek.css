@@ -9,6 +9,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +49,61 @@ nav {
 
 /* --------------------------content-----------------------------------  */
 
+.circle-arrow {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara panah dan teks */
+  font-family: Arial, sans-serif;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  position: sticky;
+  top: 20px; /* Posisi saat elemen mulai "menempel" */
+  z-index: 10; /* Supaya elemen berada di atas konten lainnya */
+  padding: 10px 15px; /* Menambahkan padding */
+  opacity: 20%;
+
+
+}
+
+.arrow-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #333; /* Warna dan ketebalan border lingkaran */
+  border-radius: 50%; /* Membuat bentuk lingkaran */
+  position: relative;
+}
+
+.arrow-left::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 10px solid #333; /* Warna panah sesuai dengan warna border */
+  position: absolute;
+  left: 6px; /* Menempatkan panah sedikit ke kiri */
+}
+
+.circle-arrow span {
+  font-size: 1em;
+  color: #000;
+  margin-left: 100px;
+}
+
+.circle-arrow a {
+  text-decoration: none;
+}
+
+
+
+.circle-arrow:hover {
+  opacity: 100%;
+}
+
 .content {
   display: grid;
   place-content: center;
@@ -65,6 +121,70 @@ nav {
   transform: translateY(-115px);
   transition: transfrom .5s;
 }
+
+/* --------------------CATEGORY------------------------ */
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.category-box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: black;
+  text-decoration: none;
+}
+
+.category-img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+/* -----------------SOON---------------- */
+
+.soon {
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  margin-top: 40%;
+  /* margin-bottom: 20%; */
+  min-width: 100%;
+}
+
+.text-soon a {
+  font-size: 25px;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.text-soon h1 {
+  font-size: 100px;
+}
+
 
 
 
