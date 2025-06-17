@@ -185,7 +185,166 @@ nav {
   font-size: 100px;
 }
 
+/* -------------------responsive web------------------------------ */
 
+@media (max-width: 430px) {
+  /* ----- PENGATURAN UMUM ----- */
+  body {
+      /* Sedikit mengurangi ukuran font dasar jika perlu */
+      font-size: 14px; 
+  }
+
+  /* ----- LOGO ----- */
+  .logo {
+      left: 5%; /* Geser logo lebih ke kiri */
+      font-size: 18px; /* Kecilkan ukuran font logo */
+      line-height: 80px; /* Pastikan tetap di tengah secara vertikal */
+  }
+
+  /* ----- PANAH KEMBALI (.circle-arrow) ----- */
+  .circle-arrow {
+      top: 10px; /* Kurangi jarak dari atas saat sticky */
+      padding: 8px; /* Kecilkan padding */
+  }
+
+  .arrow-left {
+      width: 25px; /* Kecilkan ukuran lingkaran */
+      height: 25px;
+  }
+
+  .arrow-left::before {
+      border-right-width: 8px; /* Tipiskan panahnya */
+      left: 5px; /* Sesuaikan posisi panah */
+  }
+  
+  .circle-arrow span {
+      margin-left: 15px; /* Kurangi jarak teks dari panah */
+      font-size: 0.9em; /* Kecilkan sedikit teksnya */
+  }
+
+
+  /* ----- TEKS UTAMA (.content) - PERBAIKAN ANIMASI ----- */
+.content {
+  height: auto; 
+  padding: 40px 20px; 
+  text-align: center; 
+}
+
+.text-content h1 {
+  font-size: 12vw; /* Ukuran font responsif */
+  line-height: 14vw; /* Beri ruang sedikit lebih besar dari font-size untuk efek "masking" */
+  /* Pastikan clip-path tetap ada untuk menyembunyikan karakter sebelum animasi */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  overflow: hidden; /* Tambahan untuk memastikan tidak ada yang bocor */
+}
+
+.char {
+  /* KEMBALIKAN ANIMASI! Geser ke atas sesuai ukuran barisnya */
+  transform: translateY(-100%); /* Menggeser elemen ke atas sebesar tingginya sendiri */
+  /* Alternatif lain jika -100% kurang pas, coba nilai pixel kecil */
+  /* transform: translateY(-65px); */
+  
+  transition: transform .5s; /* Pastikan transisi tetap aktif */
+}
+
+  /* ----- KOTAK KATEGORI ----- */
+  .category-container {
+      gap: 20px; /* Kurangi jarak antar kotak */
+      padding: 0 20px; /* Beri padding kiri-kanan */
+      margin-top: 50px; /* Sesuaikan jarak dari atas */
+  }
+
+  .category-box {
+      width: 150px; /* Kecilkan ukuran kotak */
+      height: 150px;
+  }
+
+  .category-img {
+      width: 50px; /* Kecilkan ukuran ikon */
+      height: 50px;
+  }
+  
+
+
+  /* ----- BAGIAN "SOON" ----- */
+  .soon {
+      margin-top: 80px; /* Kurangi margin atas secara signifikan */
+      padding: 0 20px;
+  }
+
+  .text-soon h1 {
+      font-size: 60px; /* Kecilkan font H1 secara drastis */
+  }
+
+  .text-soon a {
+      font-size: 18px; /* Kecilkan ukuran font link */
+  }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* ----- LOGO ----- */
+  .logo {
+      left: 5%; /* Geser logo sedikit agar tidak terlalu ke tengah */
+      font-size: 18px; /* Ukuran font logo bisa sama dengan mobile atau sedikit lebih besar */
+  }
+  
+  /* ----- TEKS UTAMA (.content) & ANIMASI ----- */
+  .content {
+      /* Padding bisa disesuaikan jika perlu, tapi desktop default mungkin sudah oke */
+      padding: 0 40px;
+  }
+
+  .text-content h1 {
+      /* Gunakan ukuran font yang lebih besar dari mobile, tapi lebih kecil dari desktop */
+      font-size: 9vw; 
+      line-height: 8vw; /* Sedikit lebih besar dari font-size untuk ruang animasi */
+  }
+
+  .char {
+      /* Sesuaikan nilai pergeseran animasi untuk ukuran tablet */
+      /* Nilai -100% dari CSS sebelumnya harusnya masih bekerja dengan baik */
+      transform: translateY(-100%);
+      transition: transform .5s;
+  }
+
+
+  /* ----- KOTAK KATEGORI (UPDATED) ----- */
+  .category-container {
+    gap: 30px;
+    padding: 0 40px;
+}
+
+.category-container img {
+  width: 200px;
+  height: 150px;
+}
+
+.category-container p {
+  font-size: 30px;
+}
+
+/* Ukurannya digedein lagi sesuai permintaan */
+.category-box {
+    width: 400px;
+    height: 400px;
+}
+
+
+  /* ----- BAGIAN "SOON" ----- */
+  .soon {
+      margin-top: 25%; /* Kurangi margin atas agar tidak terlalu jauh */
+  }
+
+  .text-soon h1 {
+      font-size: 80px; /* Kecilkan sedikit dari versi desktop */
+  }
+
+  .text-soon a {
+      font-size: 22px; /* Sesuaikan ukuran link */
+  }
+}
 
 
 

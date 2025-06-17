@@ -206,3 +206,135 @@ body {
     background-color: #00cc7a;
     color: #fff;
   }
+
+  /* =================================================================== */
+/* ============== ATURAN RESPONSIF UNTUK MOBILE (HP) ============== */
+/* =================================================================== */
+@media (max-width: 430px) {
+
+  /* ----- Header & Logo ----- */
+  .logo {
+      left: 5%;
+      font-size: 18px;
+  }
+
+  /* ----- Panah Kembali ----- */
+  .circle-arrow {
+      top: 10px;
+      padding: 8px;
+      font-size: 14px;
+  }
+  .circle-arrow span { margin-left: 15px; }
+  .arrow-left { width: 25px; height: 25px; }
+  .arrow-left::before { border-right-width: 8px; left: 5px; }
+  
+  /* ----- Konten Judul & Animasi ----- */
+  .content {
+      height: auto;
+      padding: 20px;
+  }
+  .text-content h1 {
+      font-size: 12vw;
+      line-height: 14vw;
+      text-align: center;
+      overflow: hidden;
+  }
+  .char {
+      transform: translateY(-100%);
+      transition: transform .5s;
+  }
+
+  /* ----- Game Card (BARU) ----- */
+  .game-card {
+      /* Kurangi padding di layar kecil */
+      padding: 20px;
+      margin: 0 15px; /* Beri jarak dari tepi layar */
+  }
+
+  .game-header {
+      /* Susun ke bawah: judul di atas, genre di bawah */
+      flex-direction: column;
+      align-items: flex-start; /* Ratakan keduanya ke kiri */
+      gap: 5px; /* Beri sedikit jarak */
+  }
+
+  .game-title {
+      font-size: 1.5rem; /* Kecilkan ukuran judul game */
+  }
+
+  .game-preview {
+      /* Tumpuk gambar ke bawah */
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .game-preview img {
+      /* Pastikan gambar tidak terlalu lebar */
+      max-width: 100%;
+      height: auto;
+  }
+
+  .game-desc {
+      font-size: 1rem; /* Kecilkan ukuran font deskripsi secara signifikan */
+      text-align: left; /* Ganti ke rata kiri agar mudah dibaca */
+  }
+
+  .play-btn {
+      /* Buat tombol lebih menonjol */
+      display: block;
+      text-align: center;
+  }
+}
+
+
+/* =================================================================== */
+/* =============== ATURAN RESPONSIF UNTUK TABLET (IPAD) ============== */
+/* =================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* ----- Header & Logo ----- */
+  .logo {
+      left: 5%;
+  }
+
+  /* ----- Konten Judul & Animasi ----- */
+  .content {
+      height: auto;
+      padding: 40px;
+  }
+  .text-content h1 {
+      font-size: 7vw; 
+      line-height: 8vw;
+  }
+  .char {
+      transform: translateY(-100%);
+      transition: transform .5s;
+  }
+
+  /* ----- Game Card (BARU) ----- */
+  .game-card {
+      /* Layout desktop sudah cukup bagus untuk tablet */
+      /* Kita hanya perlu memastikan marginnya cukup */
+      max-width: 700px; /* Sedikit kurangi lebar maks agar pas di 768px */
+      margin: 40px auto;
+      padding: 25px;
+  }
+  
+  .game-title {
+      font-size: 1.6rem; /* Sedikit sesuaikan ukuran judul */
+  }
+
+  .game-desc {
+      font-size: 1.1rem; /* Sesuaikan juga ukuran deskripsi */
+  }
+
+  .game-preview {
+      /* Biarkan gambar berdampingan jika muat */
+      flex-wrap: wrap; 
+  }
+
+  .game-preview img {
+      /* Atur agar 2 gambar bisa muat dengan nyaman */
+      max-width: calc(50% - 10px);
+  }
+}

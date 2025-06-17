@@ -585,9 +585,9 @@ nav {
     .image img {
         display: block;
         margin: auto;
+        margin-right: 30%;
     }
 
-  
     .text-konten1 {
       text-align: center;
       padding: 0 10px;

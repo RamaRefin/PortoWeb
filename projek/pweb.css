@@ -193,6 +193,141 @@
     text-decoration: none;
     color: black;
   }
+
+
+  /* =================================================================== */
+/* ============== ATURAN RESPONSIVE UNTUK MOBILE (HP) ============== */
+/* =================================================================== */
+@media (max-width: 430px) {
+
+  /* ----- Header & Logo ----- */
+  .logo {
+      left: 5%;
+      font-size: 18px;
+  }
+
+  /* ----- Panah Kembali ----- */
+  .circle-arrow {
+      top: 10px;
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .circle-arrow span {
+      margin-left: 15px;
+  }
+
+  .arrow-left {
+      width: 25px;
+      height: 25px;
+  }
+
+  .arrow-left::before {
+      border-right-width: 8px;
+      left: 5px;
+  }
+  
+  /* ----- Konten Judul & Animasi ----- */
+  .content {
+      height: auto; /* Biarkan tinggi menyesuaikan */
+      padding: 20px;
+  }
+
+  .text-content h1 {
+      font-size: 12vw;
+      line-height: 14vw;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .char {
+      transform: translateY(-100%);
+      transition: transform .5s;
+  }
+
+  /* ----- Bagian Project Showcase (BARU) ----- */
+  .project-showcase {
+      /* Beri sedikit jarak dari tepi layar */
+      padding: 20px 15px;
+  }
+
+  .project-box {
+      /* Ubah layout menjadi kolom agar gambar di atas, teks di bawah */
+      flex-direction: column;
+      text-align: center; /* Pusatkan semua teks di dalam box */
+  }
+
+  .project-images {
+      /* Pastikan gambar tidak terlalu memenuhi layar */
+      margin-bottom: 20px;
+  }
+
+  .project-images img {
+      /* Sedikit kecilkan gambar agar terlihat rapi */
+      max-width: 280px;
+      height: auto; /* Biarkan tinggi menyesuaikan */
+  }
+
+  .project-details h2 {
+      font-size: 22px; /* Sesuaikan ukuran judul project */
+  }
+
+  .project-details p {
+      font-size: 16px; /* Sesuaikan ukuran deskripsi */
+      text-align: justify;
+      hyphens: auto;
+  }
+}
+
+
+/* =================================================================== */
+/* =============== ATURAN RESPONSIF UNTUK TABLET (IPAD) ============== */
+/* =================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* ----- Header & Logo ----- */
+  .logo {
+      left: 5%;
+  }
+
+  /* ----- Konten Judul & Animasi ----- */
+  .content {
+      height: auto;
+      padding: 40px;
+  }
+
+  .text-content h1 {
+      font-size: 7vw; 
+      line-height: 8vw;
+  }
+
+  .char {
+      transform: translateY(-100%);
+      transition: transform .5s;
+  }
+
+  /* ----- Bagian Project Showcase (BARU) ----- */
+  .project-showcase {
+      padding: 40px;
+  }
+
+  .project-box {
+      /* Untuk tablet, layout desktop (side-by-side) sudah cukup bagus */
+      /* Kita hanya perlu memastikan jaraknya pas */
+      gap: 30px;
+      align-items: center; /* Pastikan gambar dan teks sejajar di tengah */
+  }
+
+  .project-images {
+      /* Pastikan container gambar tidak terlalu mendominasi */
+      flex: 1 1 350px;
+  }
+
+  .project-details {
+      /* Beri ruang yang cukup untuk teks */
+      flex: 1 1 350px;
+  }
+}
   
   
   

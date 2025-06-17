@@ -319,702 +319,162 @@ a {
 
 
 
-/*  -------------------- Responsive web--------------------- */
-/* --------------------- ipad ------------------------- */
-
-/* Responsive for tablet and mobile */
-@media (max-width: 1024px) {
-  .desk {
-    margin-left: 5%;
-    margin-top: 20%;
-  }
-
-  .desk h1 {
-    font-size: 100px;
-    max-width: 100%;
-  }
-
-  .desk p {
-    font-size: 40px;
-  }
-
-  .desk a {
-    padding: 15px 30px;
-    font-size: 25px;
-    border-radius: 10px;
-  }
-
-  .image {
-    height: 850px;
-    width: 40%;
-    left: 30%;
-  }
-
-  .content,
-  .project {
-    flex-direction: column;
-    padding: 20% 5%;
-    gap: 30px;
-  }
-
-  .cn-img,
-  .cn-project {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .text-content,
-  .text-content {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .text-content p {
-    font-size: 30px;
-  }
-
-  .text-content a {
-    font-size: 35px;
-  }
-
-
-  .text-project,
-  .text-project {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .text-project p {
-    font-size: 30px ;
-  }
-
-  .text-project a {
-    font-size: 35px;
-  }
-
-  .cn-project,
-  .cn-img{
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  /* contact */
-
-  .contact-section {
-    padding: 40px 30px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 70%;
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .contact-form input {
-    height: 50px;
-  }
-
-  .contact-form textarea {
-    height: 150px;
-  }
-
-  .contact-form input[type="submit"] {
-    width: 20%;
-  }
-  
-}
-
-
-@media (max-width: 820px) {
-  
-  body {
-    overflow-x: hidden ;
-  }
-  
-  .desk {
-    margin-left: 5%;
-    margin-top: 20%;
-  }
-
-  .desk h1 {
-    font-size: 100px;
-    max-width: 100%;
-  }
-
-  .desk p {
-    font-size: 40px;
-  }
-
-  .desk a {
-    padding: 15px 30px;
-    font-size: 25px;
-    border-radius: 10px;
-  }
-
-
-  .image-me img,
-  .image img {
-  height: 650px;
-  }
-  
-
-
-  /* About */
-
-  .content,
-  .cn-img {
-    padding-top: 200px;
-  }
-
-  .cn-img img,
-  .text-content{
-    margin-top: 300px;
-    margin: 50px auto;
-  }
-  
-
-  .text-content,
-  .text-content {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .text-content p {
-    font-size: 30px;
-  }
-
-  .text-content a {
-    font-size: 35px;
-  }
-
-
-  /* project */
-
-  .project,
-  .cn-project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20% 5% 20%; /* Sesuaikan padding biar gak terlalu jauh */
-  }
-
-
-  .cn-project img {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-
-  .text-project,
-  .text-project {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .text-project p {
-    font-size: 30px ;
-  }
-
-  .text-project a {
-    font-size: 35px;
-  }
-
-  .cn-project img{
-    max-width: 100%;
-    margin: 0 auto;
-    min-height: 0;
-  }
-
-  /* contact */
-
-  .contact-section {
-    padding: 100px 30px 300px;
-  }
-
-  .contact-section h2 {
-    padding: 10%;
-    font-size: 200%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 80%;
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .contact-form input {
-    height: 50px;
-  }
-
-  .contact-form textarea {
-    height: 150px;
-  }
-
-  .contact-form input[type="submit"] {
-    width: 20%;
-  }
-  
-}
-
-
-/* 768 */
-
-
-@media (max-width: 768px) {
-  
-  body {
-    overflow-x: hidden ;
-  }
-  
-  .desk {
-    margin-left: 5%;
-    margin-top: 20%;
-  }
-
-  .desk h1 {
-    font-size: 85px;
-    max-width: 100%;
-  }
-
-  .desk p {
-    font-size: 40px;
-  }
-
-  .desk a {
-    padding: 15px 30px;
-    font-size: 25px;
-    border-radius: 10px;
-  }
-
-
-  .image-me img,
-  .image img {
-    height: 550px;
-  }
-  
-
-
-  /* About */
-
-  .content,
-  .cn-img {
-    padding-top: 100px;
-  }
-
-  .cn-img img,
-  .text-content{
-    margin-top: 300px;
-    margin: 50px auto;
-  }
-  
-
-  .text-content,
-  .text-content {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .text-content p {
-    font-size: 30px;
-  }
-
-  .text-content a {
-    font-size: 35px;
-  }
-
-
-  /* project */
-
-  .project,
-  .cn-project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20% 5% 20%; /* Sesuaikan padding biar gak terlalu jauh */
-  }
-
-
-  .cn-project img {
-    margin: 0 auto;
-    width: 100%;
-  }
-
-
-  .text-project,
-  .text-project {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .text-project p {
-    font-size: 30px ;
-  }
-
-  .text-project a {
-    font-size: 35px;
-  }
-
-  .cn-project img{
-    max-width: 100%;
-    margin: 0 auto;
-    min-height: 0;
-  }
-
-  /* contact */
-
-  .contact-section {
-    padding: 100px 30px 300px;
-  }
-
-  .contact-section h2 {
-    padding: 10%;
-    font-size: 200%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 70%;
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .contact-form input {
-    height: 50px;
-  }
-
-  .contact-form textarea {
-    height: 150px;
-  }
-
-  .contact-form input[type="submit"] {
-    width: 20%;
-  }
-  
-}
-
-
-
-/* 700 */
-
-@media (max-width: 700px) {
-  /* Logo di navbar */
-  .logo {
-    left: 5%;
-    font-size: 18px;
-  }
-
-  /* Hero section (desk) */
-  .desk {
-    margin-left: 5%;
-    margin-top: 25%;
-  }
-
-  .desk h1 {
-    font-size: 36px;
-    max-width: 100%;
-  }
-
-  .desk p {
-    font-size: 20px;
-  }
-
-  .desk a {
-    padding: 14px 28px;
-    font-size: 18px;
-  }
-
-  /* Gambar shape & character */
-  .image {
-    width: 30%;
-    left: 55%;
-  }
-
-  .image img.shape {
-    width: 100%;
-    height: auto;
-  }
-
-  .image-me {
-    width: 100%;
-  }
-
-  .image-me img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* About me */
-  .content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-
-  .text-content, .cn-img {
-    max-width: 90%;
-    margin: 0;
-  }
-
-  .text-content h1 {
-    font-size: 28px;
-  }
-
-  .text-content p {
-    font-size: 16px;
-  }
-
-  /* Project */
-  .project {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-
-  .text-project, .cn-project {
-    max-width: 90%;
-    margin: 0;
-  }
-
-  .text-project h2 {
-    font-size: 28px;
-  }
-
-  .text-project p {
-    font-size: 16px;
-  }
-
-  /* Contact Form */
-  .contact-section {
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-
-  .contact-section h2 {
-    font-size: 24px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 90%;
-  }
-
-  .contact-form input[type="submit"] {
-    width: 120px;
-    font-size: 16px;
-  }
-}
-
-
-/* 600px */
-
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    line-height: normal;
-    padding-top: 10px;
-  }
-
-  .logo {
-    position: static;
-    text-align: center;
-  }
-
-  .desk {
-    margin-top: 30%;
-    margin-left: 5%;
-    text-align: center;
-  }
-
-  .desk h1 {
-    font-size: 28px;
-  }
-
-  .desk p {
-    font-size: 18px;
-  }
-
-  .image {
-    display: none; /* biar ngga nutupin tampilan di layar kecil */
-  }
-
-  .content,
-  .project {
-    padding-top: 40%;
-    padding-bottom: 40%;
-  }
-
-  .contact-section {
-    padding: 40px 20px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .contact-form input[type="submit"] {
-    width: 100%;
-  }
-}
-
-/* -------430------------ */
+/* =================================================================== */
+/* ============== ATURAN RESPONSIF UNTUK MOBILE (HP) ============== */
+/* =================================================================== */
 @media (max-width: 430px) {
 
-  [data-aos] {
-    transform: none !important;
-    opacity: 1 !important;
+  /* ----- Header & Logo ----- */
+  .logo {
+      left: 5%;
+      font-size: 18px;
   }
 
-  body {
-    overflow-x: hidden ;
+  /* ----- Hero Section (.desk & .image) ----- */
+  .container {
+      height: auto; 
+      padding-bottom: 50px;
   }
 
   .desk {
-    margin-top: 20%;
-    padding-right: 30px;
+      margin: 0;
+      padding: 80px 20px 30px 20px;
+      text-align: center;
   }
 
   .desk h1 {
-    font-size: 40px;
-    max-width: 100%;
+      font-size: 36px;
+      max-width: 100%;
   }
 
   .desk p {
-    font-size: 25px;
-  }
-
-  .desk a {
-    padding: 15px 30px;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-
-  /* About */
-
-  .content,
-  .cn-img {
-    padding-top: 10px;
-  }
-
-  .cn-img img{
-    height: 50%;
-    margin-top: 100px;
-    margin: 50px auto;
+      font-size: 20px;
   }
   
-
-
-  .text-content,
-  .text-content {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+  /* === BAGIAN GAMBAR YANG DIROMBAK TOTAL START === */
+  /* Kode BARU di dalam @media (max-width: 430px) */
+  .image {
+    position: relative;
+    width: 90%;
+    max-width: 320px;
+    height: 350px;
+    /* Naikin 40px ke atas dari posisi sebelumnya */
+    margin: -40px auto 0 auto; /*<-- INI DIA KUNCINYA */
+    left: auto;
+    bottom: auto;
   }
 
-  .text-content p {
-    font-size: 20px;
-    padding: 0 20px;
+  /* ATURAN UMUM UNTUK KEDUA GAMBAR */
+  .image img, .image-me {
+      all: unset; /* Hapus semua style aneh dari desktop */
+      position: absolute; /* Kunci agar bisa ditumpuk */
+      width: 85%; /* Lebar gambar di dalam kanvas .image */
+      height: auto;
+      border-radius: 10px; /* Bentuk kotak lebih bagus untuk ditumpuk */
   }
 
-  .text-content a {
-    font-size: 18px;
+  /* GAMBAR BELAKANG */
+  .image img {
+      top: 0;
+      left: 0;
+      z-index: 1; /* Pastikan dia di lapisan belakang */
   }
 
+  /* GAMBAR DEPAN (YANG MIRROR) */
+  .image-me {
+      display: block !important; /* PENTING! Munculkan lagi gambarnya */
+      top: 50px;  /* Geser ke bawah 50px dari atas kanvas */
+      left: 50px; /* Geser ke kanan 50px dari kiri kanvas */
+      transform: rotateY(180deg); /* Kembalikan efek mirror */
+      z-index: 2; /* Pastikan dia di lapisan depan */
+  }
+  /* === BAGIAN GAMBAR YANG DIROMBAK TOTAL END === */
 
-  /* project */
 
-  .project,
-  .cn-project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* ----- About Me, Project Section ----- */
+  .content, .project {
+      flex-direction: column;
+      padding: 50px 20px;
+      text-align: center;
   }
 
-
-  .cn-project img {
-    margin: 0 auto;
-    width: 100%;
+  .text-content, .text-project {
+      max-width: 100%;
+      margin: 0 0 30px 0;
   }
 
-
-  .text-project,
-  .text-project {
-    max-width: 100%;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
+  .text-content h1, .text-project h2 {
+      font-size: 2em;
   }
 
-  .text-project p {
-    font-size: 23px ;
-    padding: 0 20px;
+  .text-content p, .text-project p {
+      font-size: 1em;
   }
 
-  .text-project a {
-    font-size: 20px;
+  .cn-img, .cn-project {
+      max-width: 80%;
+      margin: 0 auto;
   }
 
-  .cn-project img{
-    max-width: 100%;
-    margin: 0 auto;
-    min-height: 0;
-  }
-
-  /* contact */
-
+  /* ----- Contact Form ----- */
   .contact-section {
-    padding: 100px 30px 300px;
-  }
-
-  .contact-section h2 {
-    padding: 10%;
-    font-size: 200%;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 70%;
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .contact-form input {
-    height: 50px;
-  }
-
-  .contact-form textarea {
-    height: 150px;
-  }
-
-  .contact-form input[type="submit"] {
-    width: 70%;
+      padding-top: 50px;
+      padding-bottom: 50px;
   }
 }
 
+/* =================================================================== */
+/* =============== ATURAN RESPONSIF UNTUK TABLET (IPAD) ============== */
+/* =================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
 
+  /* ----- Header & Logo ----- */
+  .logo { left: 5%; }
 
+  /* ----- Hero Section (.desk & .image) ----- */
+  .desk {
+      margin-left: 5%;
+      margin-top: 20%; /* Turunkan sedikit */
+  }
 
+  .desk h1 {
+      font-size: 40px;
+      max-width: 60%; /* Beri ruang lebih untuk judul */
+  }
 
+  .desk p { font-size: 22px; }
+
+  .image {
+      width: 40%; /* Lebar container gambar */
+      height: 70%; /* Tinggi container gambar */
+      left: 55%; /* Geser ke kiri sedikit */
+  }
+
+  /* ----- About Me, Project Section ----- */
+  .content, .project {
+      /* Layout tetap side-by-side, tapi padding disesuaikan */
+      padding: 80px 30px;
+      align-items: center; /* Pastikan vertikal center */
+  }
   
+  .text-content, .text-project {
+      max-width: 50%;
+      margin-left: 5%;
+  }
+
+  .cn-img, .cn-project {
+      max-width: 40%;
+      margin-right: 5%;
+  }
+  
+  .text-content h1, .text-project h2 {
+      font-size: 2.2em;
+  }
+
+  /* ----- Contact Form ----- */
+  .contact-section {
+      /* Kurangi padding vertikal dari persen ke vh/px */
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+  }
+}
