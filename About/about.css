@@ -420,220 +420,334 @@ nav {
 }
 
 
-/* ---------------------------------Media Queries untuk Responsivitas --------------*/
-
-/* Mobile (max-width 767px) */
-@media (max-width: 767px) {
+/* =================================================================== */
+/* ============== ATURAN RESPONSIF UNTUK MOBILE (HP) ============== */
+/* =================================================================== */
+@media (max-width: 430px) {
+    
+    /* ----- NAVIGASI ----- */
     .logo {
         left: 5%;
         font-size: 18px;
     }
-
     .navItems {
-        display: none; /* Menyembunyikan menu navbar untuk mobile */
+        display: none; /* Sembunyikan menu di mobile */
     }
 
-    .container {
-        padding: 0 10px;
-    }
-
-    .circle-arrow {
-        font-size: 14px;
-        margin-left: 20px;
-        top: 10px;
-        padding: 8px;
-    }
-
-    .circle-arrow span {
-        margin-left: 10px;
-    }
-
+    /* ----- KONTEN UTAMA (HERO SECTION) ----- */
     .isi-konten {
-        flex-direction: column; /* Mengubah flex-direction menjadi column pada perangkat mobile */
-        padding-top: 5%;
+        flex-direction: column; /* Susun vertikal: gambar di atas, teks di bawah */
+        align-items: center;    /* Pusatkan semua */
+        max-width: 90%;
+        padding-top: 20%;
+        gap: 40px;
     }
 
+    /* TATA ULANG TOTAL IMAGE COLLAGE */
     .image {
-        width: 100%;
-        height: 250px;
+        width: 100%;       /* Gunakan lebar penuh dari container */
+        height: 300px;     /* Beri tinggi yang pasti */
+        margin-bottom: 30px; /* Jarak ke teks di bawahnya */
+        transform: scale(0.9); /* Kecilkan sedikit keseluruhan collage */
     }
 
     .image img {
-        width: 100%;
-        height: auto;
-        left: 0;
-        top: 0;
-        filter: grayscale(100%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
+
+    .image .img1 {
+        width: 80%;
+        top: 0;
+        left: 0;
+    }
+    .image .img2 {
+        width: 90%;
+        top: 20px;
+        right: -80px; /* Disesuaikan agar pas */
+    }
+    .image .img3 {
+        width: 85%;
+        top: 130px;
+        left: 20px;
+    }
+    
+    .text-konten1 { text-align: center; }
 
     .text-konten1 p {
-        font-size: 1em;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 0;      /* Hapus margin aneh */
+        text-align: center;  /* Pusatkan teks di mobile */
+        font-size: 1.1em;
     }
 
-    .text-konten1 h2 {
-        font-size: 1.2em;
+    .sosmed {
+        text-align: center;
+        padding: 10% 5%;
     }
 
-    .sosmed a {
-        font-size: 25px;
-        margin-right: 20px;
+    /* ----- SKILLS SECTION ----- */
+    .skills-section {
+        width: 90%;
+        margin: 20% auto 0 auto; /* Atur ulang margin */
+        padding: 10px;
+    }
+    .skills-icons {
+        flex-wrap: wrap; /* Izinkan ikon turun ke bawah jika tidak muat */
+        gap: 30px;
     }
 
-    .sosmed-text {
-        margin-right: 0;
+    /* ----- SLIDER BAHASA & FRAMEWORK ----- */
+    .slider {
+        /* Kecilkan ukuran slider di mobile */
+        --width: 100px;
+        --height: 100px;
+    }
+    .content {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    /* ----- TOOLS SECTION ----- */
+    .tools-section h1 { font-size: 30px; }
+    .tools-grid {
+        /* Ubah dari 3 kolom menjadi 2 kolom */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 90%;
+    }
+
+    /* ----- COMING SOON SECTION ----- */
+    .soon {
+        margin-top: 25%;
+        padding: 20px;
+    }
+    .text-soon h1 {
+        font-size: 50px; /* Kecilkan font secara drastis */
     }
 }
 
-/* Tablet (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* =================================================================== */
+/* ============== ATURAN RESPONSIF UNTUK MOBILE (HP) ============== */
+/* =================================================================== */
+@media (max-width: 430px) {
+    
+    /* ----- NAVIGASI ----- */
     .logo {
         left: 5%;
-        font-size: 20px;
+        font-size: 18px;
     }
-
     .navItems {
-        display: flex;
-        justify-content: flex-end;
+        display: none; /* Sembunyikan menu di mobile */
     }
 
-    .circle-arrow {
-        font-size: 16px;
-        margin-left: 20px;
-        top: 10px;
-    }
-
-    .circle-arrow span {
-        margin-left: 10px;
-    }
-
+    /* ----- KONTEN UTAMA (HERO SECTION) ----- */
     .isi-konten {
-        flex-direction: row; /* Tetap menggunakan row pada tablet */
+        flex-direction: column; 
+        align-items: center;    /* Pastikan ini ada untuk centering */
+        max-width: 90%;
+        padding-top: 20%;
+        gap: 40px;
     }
-
+    
+    /* === TATA ULANG TOTAL IMAGE COLLAGE (VERSI LEBIH BAIK) === */
     .image {
-        width: 250px; /* Menyesuaikan ukuran gambar */
-        height: 350px;
+        /* Kunci #1: Center-kan container & atur lebar */
+        position: relative;
+        width: 90%; /* Ambil 90% dari lebar layar */
+        max-width: 350px; /* Batas maksimal lebar */
+        margin: 0 auto; /* Trik centering paling ampuh */
+    
+        /* Kunci #2: Atur Ukuran Fleksibel pakai aspect-ratio */
+        aspect-ratio: 3 / 4; /* Jaga perbandingan lebar:tinggi selalu 3:4 */
+        
+        /* Hapus properti yang tidak perlu lagi */
+        height: auto; /* Biarkan tinggi diatur oleh aspect-ratio */
+        transform: none; /* Hapus scale agar ukurannya pas */
     }
-
-
-
-    .text-konten1 p {
-        font-size: 0,5em;
-        margin-left: 28%;
-    }
-
-    .sosmed a {
-        font-size: 28px;
-    }
-}
-
-
-
-@media (max-width: 430px) {
-    /* Logo */
-    .logo {
-      left: 5%;
-      font-size: 18px;
-      position: relative;
-    }
-  
-    /* Nav items */
-    .navItems {
-      display: none; /* Sembunyiin menu navbar */
-    }
-  
-    /* Container */
-    .container {
-      padding: 0 10px;
-    }
-  
-    /* Panah (circle-arrow) */
-    .circle-arrow {
-      font-size: 14px;
-      margin-left: 20px;
-      top: 10px;
-      padding: 8px;
-      position: relative;
-    }
-  
-    .circle-arrow span {
-      margin-left: 10px;
-    }
-  
-    /* Konten utama */
-    .isi-konten {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 5%;
-      gap: 20px;
-    }
-
-    .image {
-        padding-bottom: 400px;
-    }
-
-        .isi-konten,
-        .image img {
-        width: 100px;
-        height: auto;
-        object-fit: contain;
-    }
-
+    
+    /* Kunci #3: Posisi & Ukuran Gambar pakai Persen (%) agar ikut skala */
     .image img {
-        display: block;
-        margin: auto;
-        margin-right: 30%;
+        position: absolute;
+        height: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        transition: transform 0.3s ease;
     }
-
-    .text-konten1 {
-      text-align: center;
-      padding: 0 10px;
+    
+    .image .img1 {
+        width:50%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        filter: grayscale(100);
     }
-  
-    .text-konten1 h2 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
+    
+    .image .img2 {
+        width: 50%;
+        /* Posisikan dari kanan agar rapi */
+        top: 15%;
+        right: 0;
+        z-index: 3; /* Paling depan */
+        filter: grayscale(0);
     }
+    
+    .image .img3 {
+        width: 50%;
+        /* Posisikan dari bawah agar rapi */
+        bottom: 0;
+        left: 10%;
+        z-index: 2;
+        filter: grayscale(100);
+    }
+    
+    .text-konten1 { text-align: center; }
 
     .text-konten1 p {
-        margin-right: 2%;
+        margin-left: 0;      /* Hapus margin aneh */
+        text-align: justify;  /* Pusatkan teks di mobile */
+        font-size: 1.1em;
     }
-  
-    /* Sosial Media */
+
     .sosmed {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
-      padding-top: 70px;
-    }
-  
-    .sosmed a {
-      font-size: 25px;
-    }
-  
-    .sosmed-text {
-      margin-right: 30px;
-      font-size: 15px;
+        text-align: center;
+        padding: 10% 5%;
     }
 
-  
-    .skills-section,
-    .skills-section img {
-        display: block;
-        margin: auto;
-        padding: 0 2px;
+    .sosmed-text{
+        text-align: right;
     }
 
+    /* ----- SKILLS SECTION ----- */
+    .skills-section {
+        width: 90%;
+        margin: 20% auto 0 auto; /* Atur ulang margin */
+        padding: 10px;
+    }
+    .skills-icons {
+        flex-wrap: wrap; /* Izinkan ikon turun ke bawah jika tidak muat */
+        gap: 30px;
+    }
 
-    .content,
-    .list,
-    .item img{
+    /* ----- SLIDER BAHASA & FRAMEWORK ----- */
+    .slider {
+        /* Kecilkan ukuran slider di mobile */
+        --width: 100px;
+        --height: 100px;
+    }
+    .content {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .content, .list{
         font-size: 12px;
     }
 
+    /* ----- TOOLS SECTION ----- */
+    .tools-section h1 { font-size: 30px; }
+    .tools-grid {
+        /* Ubah dari 3 kolom menjadi 2 kolom */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 90%;
+    }
 
+    /* ----- COMING SOON SECTION ----- */
+    .soon {
+        margin-top: 25%;
+        padding: 20px;
+    }
+    .text-soon h1 {
+        font-size: 50px; /* Kecilkan font secara drastis */
+    }
+}
+
+
+/* =================================================================== */
+/* =============== ATURAN RESPONSIF UNTUK TABLET (IPAD) ============== */
+/* =================================================================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .logo { left: 5%; }
+    .navItems li { margin: 0 10px; }
+    
+    .isi-konten {
+        max-width: 90%;
+        align-items: center; /* Jaga agar teks dan gambar sejajar vertikal */
+        gap: 30px; /* Atur jarak antara teks dan gambar */
+    }
+    
+    .text-konten1 {
+        flex: 1; /* Biarkan teks mengambil ruang yang tersedia */
+        text-align: left; /* Teks lebih baik rata kiri di tablet */
+    }
+    
+    .text-konten1 p {
+        margin-left: 0; /* Hapus margin aneh dari versi desktop */
+        text-align: left;
+    }
+    
+    /* === TATA ULANG TOTAL IMAGE COLLAGE UNTUK TABLET === */
+    .image {
+        /* Kunci #1: Atur ukuran container sebagai bagian dari flex layout */
+        flex: 0 0 45%; /* Artinya: jangan grow, jangan shrink, lebar dasar 45% */
+        position: relative;
+        
+        /* Kunci #2: Jaga bentuknya dengan aspect-ratio */
+        aspect-ratio: 4 / 5; /* Sedikit lebih lebar dari versi mobile */
+    
+        /* Hapus properti yang tidak perlu/usang */
+        transform: none;
+        margin-right: 0;
+        width: auto; /* Biarkan diatur oleh flex */
+        height: auto; /* Biarkan diatur oleh aspect-ratio */
+    }
+    
+    /* Kunci #3: Atur ulang posisi & ukuran gambar pakai persen (%) */
+    .image img {
+        position: absolute;
+        height: auto;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    
+    .image .img1 {
+        width: 50%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        filter: grayscale(100);
+    }
+    
+    .image .img2 {
+        width: 50%;
+        top: 15%;
+        right: 0;
+        z-index: 3; /* Paling depan */
+        filter: grayscale(0);
+    }
+    
+    .image .img3 {
+        width: 50%;
+        bottom: 0;
+        left: 10%;
+        z-index: 2;
+        filter: grayscale(100);
+    }
+    /* ----- SKILLS SECTION ----- */
+    .skills-section {
+        width: 90%;
+        margin: 15% auto 0 auto;
+    }
+
+    /* ----- TOOLS SECTION ----- */
+    .tools-grid {
+        /* 3 kolom masih oke untuk tablet */
+        max-width: 90%;
+    }
+
+    /* ----- COMING SOON SECTION ----- */
+    .soon { margin-top: 20%; }
+    .text-soon h1 { font-size: 80px; }
 }
