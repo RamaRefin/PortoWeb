@@ -57,17 +57,17 @@ nav {
     max-width: 50%;
 }
 
-.desk h1 span {
+/* .desk h1 span {
   color: rgb(6, 49, 129);
   font-family: "Chakra Petch", sans-serif;
-}
+} */
 
-.desk p{
+/* .desk p{
     color: black;
     line-height: 22px;
     font-family: "Caveat", serif;
     font-size: 25px;
-}
+} */
 
 .desk a {
     background: black;
@@ -80,12 +80,125 @@ nav {
     border-radius: 5px;
 }
 
+/* ================================== */
+/* CSS UNTUK EFEK HERO PARALLAX+ZOOM */
+/* ================================== */
+
+/* Container utama hero section */
+.hero-section {
+  height: 100vh; /* Penuhi tinggi layar */
+  position: relative; /* Wajib agar elemen di dalamnya bisa diatur posisinya */
+  overflow: hidden; /* Wajib agar gambar yg di-zoom tidak keluar dari frame */
+  display: flex; /* Agar konten di tengah */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Div yang berisi gambar background */
+.hero-background {
+  position: fixed; /* Kunci: gambar diam relatif terhadap layar & bisa di-zoom */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* GANTI DENGAN GAMBAR BACKGROUND KEREN KAMU! */
+  background-image: url(img/img1.2.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Letakkan di paling belakang */
+  transition: transform 0.2s ease-out; /* Animasi zoom lebih halus */
+}
+
+/* Wrapper untuk konten asli kamu agar tetap rapi */
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 10px; /* Sesuaikan dengan lebar layout kamu */
+  padding: 20px;
+  z-index: 1; /* Pastikan konten ada di atas background */
+}
+
+.hero-content .desk h1 {
+
+  font-family: "anton", sans-serif;
+  /* EFEK "BOLONG" */
+  color: white;
+  mix-blend-mode: screen;
+
+  /* STYLING TAMBAHAN */
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  white-space: nowrap;
+}
 
 
+/* ================================== */
+/* ABOUT      */
+/* ================================== */
+
+.intro-section {
+  padding: 80px 20px; /* Jarak atas-bawah 80px, kiri-kanan 20px */
+  background-color: #f3f3f3; /* Warna latar belakang putih */
+  color: #333333; /* Warna teks gelap */
+  text-align: center; /* Membuat semua konten di dalamnya rata tengah */
+}
+
+.intro-content {
+  max-width: 800px; /* Lebar maksimal konten agar tidak terlalu melebar di layar besar */
+  margin: 0 auto; /* Trik sakti untuk membuat div ini pas di tengah */
+}
+
+.intro-content p {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Font yang bersih & mudah dibaca */
+  font-size: 1.1rem; /* Ukuran font sedikit lebih besar dari normal */
+  line-height: 1.7; /* Jarak antar baris agar nyaman dibaca */
+  margin-bottom: 40px; /* Jarak dari paragraf ke tombol di bawahnya */
+  text-align: justify;
+}
+
+/* Styling untuk link di dalam teks (Rumble, LOCALS) */
+.inline-link {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+  color: #000000;
+}
+
+/* Styling untuk tombol utama */
+.tombol-cv {
+  display: inline-block; /* Agar bisa diatur padding & margin */
+  background-color: #222222; /* Warna tombol hitam gelap */
+  color: #ffffff; /* Warna teks putih */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none; /* Hilangkan garis bawah link */
+  padding: 14px 28px; /* Ukuran tombol */
+  border-radius: 50px; /* Membuat tombol jadi kapsul (sangat melengkung) */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tombol-cv:hover {
+  background-color: #000000; /* Warna jadi lebih hitam saat disentuh mouse */
+  transform: scale(1.05); /* Sedikit membesar saat disentuh mouse */
+}
+
+/* Atur jarak ikon di dalam tombol */
+.tombol-cv .fa-solid {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
 
 /* ----------------------- banner image --------------------- */
 
-.image {
+/* .image {
     width: 5%;
     height: 90%;
     position: absolute;
@@ -112,22 +225,22 @@ nav {
 
 .image-me img:hover {
   filter: grayscale(0%);
-}
+} */
 
 
 
 /* -------------------------About me ------------------------- */
 
 .content {
-  background-color: #f3f3f3;
+  background-color: #bdbab5;
   align-items: flex-start;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px 50px;
-  padding-top: 30%;
-  padding-bottom: 30%;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 .text-content {
@@ -143,7 +256,7 @@ nav {
 
 .text-content p {
   font-size: 1.2em;
-  color: #666;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -280,7 +393,7 @@ a {
 /* -------------------------Contact form ------------------------- */
 
 .contact-section {
-    background-color: #f3f3f3;
+    background-color: #bdbab5;
     color: black;
     padding: 50px 0;
     text-align: center;
@@ -342,14 +455,16 @@ a {
       text-align: center;
   }
 
-  .desk h1 {
-      font-size: 36px;
-      max-width: 100%;
-  }
+  .hero-section .hero-content .desk h1 {
+    font-size: 4rem;      /* UKURAN FONT JADI LEBIH KECIL */
+    white-space: normal;  /* Izinkan teks turun baris jika tidak muat */
+    line-height: 1.2;     /* Atur jarak baris agar rapi saat turun */
+    text-align: center;   /* Pusatkan teks saat turun baris */
+}
 
-  .desk p {
+  /* .desk p {
       font-size: 20px;
-  }
+  } */
   
   /* === BAGIAN GAMBAR YANG DIROMBAK TOTAL START === */
   /* Kode BARU di dalam @media (max-width: 430px) */
@@ -437,10 +552,12 @@ a {
       margin-top: 20%; /* Turunkan sedikit */
   }
 
-  .desk h1 {
-      font-size: 40px;
-      max-width: 60%; /* Beri ruang lebih untuk judul */
-  }
+  .hero-section .hero-content .desk h1 {
+    font-size: 5.8rem;      /* UKURAN FONT JADI LEBIH KECIL */
+    white-space: normal;  /* Izinkan teks turun baris jika tidak muat */
+    line-height: 1.2;     /* Atur jarak baris agar rapi saat turun */
+    text-align: center;   /* Pusatkan teks saat turun baris */
+}
 
   .desk p { font-size: 22px; }
 
