@@ -141,7 +141,7 @@ nav {
 /* ================================== */
 
 .intro-section {
-  padding: 80px 20px; /* Jarak atas-bawah 80px, kiri-kanan 20px */
+  padding: 200px 20px; /* Jarak atas-bawah 80px, kiri-kanan 20px */
   background-color: #f3f3f3; /* Warna latar belakang putih */
   color: #333333; /* Warna teks gelap */
   text-align: center; /* Membuat semua konten di dalamnya rata tengah */
@@ -429,6 +429,48 @@ a {
     width: 100px;
 }
 
+/* Styling baru untuk wadah status form */
+#form-status {
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  display: none; /* Sembunyi secara default */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Modifier class untuk memunculkan pesan */
+#form-status.show {
+  display: inline-block;
+  opacity: 1;
+}
+
+/* Styling untuk setiap kondisi */
+.status-sending {
+  background-color: #e9ecef; /* Abu-abu muda */
+  color: #495057;
+}
+
+.status-success {
+  background-color: #d4edda; /* Hijau sukses */
+  color: #155724;
+}
+
+.status-error {
+  background-color: #f8d7da; /* Merah error */
+  color: #721c24;
+}
+
+/* Animasi untuk ikon spinner */
+.fa-spinner {
+  animation: fa-spin 2s infinite linear;
+}
+@keyframes fa-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 
 
@@ -511,6 +553,11 @@ a {
       flex-direction: column;
       padding: 50px 20px;
       text-align: center;
+      min-height: 70vh;
+  }
+
+  .project{
+    min-height: 55vh;
   }
 
   .text-content, .text-project {
@@ -529,6 +576,7 @@ a {
   .cn-img, .cn-project {
       max-width: 80%;
       margin: 0 auto;
+      padding-right: 30px;
   }
 
   /* ----- Contact Form ----- */
