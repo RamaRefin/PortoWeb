@@ -239,8 +239,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 50px 50px;
-  padding-top: 20%;
-  padding-bottom: 20%;
 }
 
 .text-content {
@@ -551,7 +549,7 @@ a {
   /* ----- About Me, Project Section ----- */
   .content, .project {
       flex-direction: column;
-      padding: 50px 20px;
+      padding: 255px 20px;
       text-align: center;
       min-height: 70vh;
   }
